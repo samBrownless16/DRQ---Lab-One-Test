@@ -5,6 +5,7 @@ class Vehicle{
         this.year = year;
     }
 
+    // Outputs Details
     Information(){
         console.log(`Make: ${this.make}.`);
         console.log(`Model: ${this.model}.`);
@@ -17,12 +18,12 @@ class Vehicle{
 
 class Car extends Vehicle {
     constructor(make, model, year, doors){
-        super(make, model, year);
+        super(make, model, year); // Invoke parent class constructor
         this.doors = doors;
     }
 
     Information() {
-        super.Information();
+        super.Information(); // Invoke method in the parent class
         console.log(`Doors: ${this.doors}.`);
     }
 }
